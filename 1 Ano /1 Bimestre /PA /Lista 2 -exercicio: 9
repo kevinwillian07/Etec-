@@ -1,0 +1,42 @@
+/*
+ * Instituição: etecvav
+ * Data: 09/04/2026
+ * Autor: Kevin Willian da Silva Souza
+ * Descricao:Ler um número e verificar se ele é um quadrado perfeito .
+*/
+programa
+{
+	funcao inicio()
+	{
+
+//variaveis
+		inteiro numero, i
+		logico ehQuadrado
+
+          escreva("Digite o número:")
+//ler numero inserido
+		leia(numero)
+
+		ehQuadrado = falso
+
+//descobrir se é ou não quadrado perfeito
+		para (i = 0; i * i <= numero; i++) {
+			se (i * i == numero) {
+				ehQuadrado = verdadeiro
+			}
+		}
+
+ //limpa o console
+          limpa()
+
+//resultado final caso sim
+		se (ehQuadrado) {
+			escreva(numero, " é quadrado perfeito")
+		}
+
+//resultado final caso não
+		senao{
+			escreva(numero, " não é quadrado perfeito")
+		}
+	}
+}
