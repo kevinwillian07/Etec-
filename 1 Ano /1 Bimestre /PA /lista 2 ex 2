@@ -1,0 +1,60 @@
+/*
+ * Instituição: etecvav
+ * Data: 02/04/2026
+ * Autor: Kevin William da Silva Souza
+ * Descricao: Ler três números e verificar se eles formam um triângulo. Caso formem, identificar se é:
+  Equilátero (todos os lados iguais)
+  Isósceles (dois lados iguais)
+  Escaleno (todos os lados diferentes)
+*/
+programa
+{
+	funcao inicio()
+	{
+		//  Declaração das variáveis
+		real a, b, c
+
+		//  Entrada de dados
+		escreva("Digite o valor do lado A: ")
+		leia(a)
+		escreva("Digite o valor do lado B: ")
+		leia(b)
+		escreva("Digite o valor do lado C: ")
+		leia(c)
+
+		limpa() // Limpa a tela para organizar o resultado
+
+	
+		
+		// Primeiro, verificamos a condição de existência do triângulo
+		se (a < b + c e b < a + c e c < a + b) 
+		{
+			escreva("Os lados formam um triângulo: ")
+
+			// Classificação quanto aos lados
+			se (a == b e b == c) 
+			{
+				escreva("EQUILÁTERO\n")
+				escreva("Motivo: Todos os lados são iguais.")
+			}
+			senao se (a == b ou a == c ou b == c) 
+			{
+				escreva("ISÓSCELES\n")
+				escreva("Motivo: Dois lados são iguais.")
+			}
+			senao 
+			
+			{
+				escreva("ESCALENO\n")
+				escreva("Motivo: Todos os lados são diferentes.")
+			}
+		}
+		senao 
+		{
+			// Caso não forme um triângulo
+			escreva(" Não forma um triângulo essas medidas.\n")
+			
+		}
+	}
+}
+
