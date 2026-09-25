@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <link rel="stylesheet" href="animal01.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt me</title>
+  <link rel="icon" type="image/x-icon" href="pata marrom (1).png">
+</head>
+<body>
+  
+<nav class="navbar">
+
+  <div class="logo">
+    <img src="pata marrom (1).png">
+    <h2>Adopt me</h2>
+</div>
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="animal 2.html">Sobre</a></li>
+        <li><a href="adçao.html">Adoção</a></li>
+        <li><a href="sobre.html">Contato</a></li>
+    </ul>
+</nav>
+
+
+  <h1>
+    Você Precisa Saber Antes de Adotar!
+  </h1>
+
+  <br>
+  <h2>O Amor que Transforma: Guia Completo sobre Adoção Responsável</h2>
+
+  <br>
+
+  <h3 class="vamo">Adoção responsável é um ato de amor, mas acima de tudo, <br>
+    um compromisso de longo prazo.Um animal de estimação não é <br>
+    um brinquedo ou um presente passageiro, mas  sim um membro  <br>
+    da família que dependerá de você para tudo. Se você está <br>
+    pensando em abrir seu coração e sua casa para um pet, confira <br>
+    abaixo tudoo que você precisa saber, organizado em três pilares <br>
+    essenciais:  por que adotar, o que você precisa e como cuidar.</h3>
+
+  <br>
+  <br>
+
+  
+  <div class="potencia">
+
+    <!-- TEXTO (INTACTO, SEM ALTERAÇÃO) -->
+    <h3 class="texto1">O Que Significa Adotar com Consciência:<br>
+      <br>
+       Desmistificando a Realidade do Processo<br>
+       A adoção consciente começa muito antes da<br>
+       chegada do novo membro à família; ela nasce<br>
+       da desconstrução de ideias românticas e da <br>
+       preparação emocional para a realidade. Muitas<br>
+       pessoas iniciam a jornada com expectativas <br>
+       irreais, alimentadas por contos de fadas ou <br>
+       pela ânsia de preencher um vazio emocional,<br>
+       esquecendo-se de que a criança ou o adolescente<br>
+       que chega traz consigo uma história única, <br>
+       marcada por rupturas, lutos e, muitas vezes, <br>
+       traumas.
+       <br>
+       <br>
+
+      Acolhimento da história prévia:<br>
+      <br>
+       Adotar conscientemente significa entender <br>
+       que a criança não é uma "tela em branco". Ela<br>
+       tem memórias, hábitos e laços anteriores que<br>
+       precisam ser respeitados e validados, e não <br>
+       apagados. O passado dela faz parte de quem ela é.
+      
+       <br>
+       <br>
+      Preparação psicológica dos adotantes:<br>
+      <br>
+       Os futuros pais devem passar por um processo<br>
+       profundo de autoanálise, muitas vezes com apoio<br>
+       terapêutico, para identificar suas verdadeiras<br>
+       motivações. Perguntas como "Estou adotando para<br>
+       suprir uma expectativa minha ou para oferecer um<br>
+       lar a quem precisa?" são fundamentais.
+       <br>
+       <br>
+      
+      Quebra de mitos sobre o "amor à primeira vista":<br>
+      <br>
+       O vínculo afetivo nem sempre surge de forma mágica<br>
+       e instantânea no primeiro encontro. A construção do<br>
+       amor parental na adoção é um processo gradual, que se<br>
+       fortalece no dia a dia, na paciência, na rotina e na <br>
+       superação conjunta de desafios.</h3>
+
+
+
+
+
+    <!-- GALERIA NA DIREITA -->
+    <div class="galeria-container">
+
+      <div class="menucima">
+        <a href="#animal-1" class="btn-link">1</a>
+        <a href="#animal-2" class="btn-link">2</a>
+        <a href="#animal-3" class="btn-link">3</a>
+        <a href="#animal-4" class="btn-link">4</a>
+      </div>
+    
+      <div class="galeria">
+        
+        <div class="card-animal" id="animal-1">
+          <img src="“thoses who look only in the past or present are….jfif" alt="Gatinho">
+          <h3>Disponivel:</h3>
+          <h3>1. Gato</h3>
+        </div>
+    
+        <div class="card-animal" id="animal-2">
+          <img src="244672192253767135.jfif" alt="Cachorrinho">
+          <h3>Disponivel:</h3>
+          <h3>2. Sr Cachorro</h3>
+        </div>
+    
+        <div class="card-animal" id="animal-3">
+          <img src="40673202880786890.jfif" alt="Outro cachorrinho">
+          <h3>Disponivel:</h3>
+          <h3>3. Matilha</h3>
+        </div>
+    
+        <div class="card-animal" id="animal-4">
+          <img src="Мемы.jfif" alt="Papagaio">
+          <h3>Indisponivel:</h3>
+          <h3>4. Papagaio</h3>
+
+
+
+
+
+        </div>
+    
+      </div>
+    
+    </div>
+
+  </div>
+
+ <footer>
+
+<h3>Adopt me</h3>
+
+<p>Email: contato@adoptme.com</p>
+
+<p>Telefone: (11) 6767-4242</p>
+
+<p>©2026 Todos os direitos reservados.</p>
+
+</footer>
+
+
+
+</body>
+</html>
