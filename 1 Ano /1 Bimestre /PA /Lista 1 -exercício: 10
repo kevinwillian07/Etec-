@@ -1,0 +1,82 @@
+/* 
+ * 
+ * Instituição: etecvav
+ * Data: 15/03/2026
+ * Autor: Kevin Willian da Silva Souza
+ * Descricao: O caixa do supermercado recebe uma certa quantidade de moedas pordia. Ler a quantidade de moedas recebidas de acordo com cada um dos valores 1, 5, 10, 25 e 50 centavos, e ainda moedas de 1 real. Calcular e exibir o valor recebido de cada um dos tipos de moeda e a soma total em moedas
+ * 
+*/
+programa
+{
+	
+	funcao inicio()
+
+	{
+		
+     // Variáveis para as quantidades		
+     inteiro q1, q5, q10, q25, q50 ,q1R
+
+     // Variáveis para os valores calculados
+     real v1, v5, v10, v25, v50, v1R, total
+
+
+     // Captura de dados
+     escreva("Quantidade de moedas de 1 centavo: ")
+     leia(q1)
+
+     limpa()
+     
+     escreva("Quantidade de moedas de 5 centavos: ")
+     leia(q5)
+
+     limpa()
+     
+     escreva("Quantidade de moedas de 10 centavos: ")
+     leia(q10)
+
+     limpa()
+     
+     escreva("Quantidade de moedas de 25 centavos: ")
+     leia(q25)
+
+     limpa()
+     
+     escreva("Quantidade de moedas de 50 centavos: ")
+     leia(q50)
+
+     limpa()
+     
+     escreva("Quantidade de moedas de 1 real: ")
+     leia(q1R)
+
+     limpa()
+
+     //Calculo do valor das moedas
+     v1 = q1 * 0.01
+     v5 = q5 * 0.05
+     v10 = q10 * 0.10
+     v25 = q25 * 0.25
+     v50 = q50 * 0.50
+     v1R = q1R * 1.00
+
+     total = v1 + v5 + v10 + v25 + v50 + v1R
+
+
+     //Resultados idividuais e soma total
+     escreva("\n Resumo do Caixa \n")
+		escreva("Total em 1 centavo: R$ ", v1, "\n")
+		escreva("Total em 5 centavos: R$ ", v5, "\n")
+		escreva("Total em 10 centavos: R$ ", v10, "\n")
+		escreva("Total em 25 centavos: R$ ", v25, "\n")
+		escreva("Total em 50 centavos: R$ ", v50, "\n")
+		escreva("Total em 1 real: R$ ", v1R, "\n")
+		escreva("-----------------------\n")
+		escreva("SOMA TOTAL: R$ ", total)
+		
+		
+		
+		
+		
+		}
+}
+	
