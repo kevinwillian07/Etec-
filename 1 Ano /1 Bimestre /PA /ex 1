@@ -1,0 +1,49 @@
+/*
+ *  Instituição: etecvav
+ * Data: 15/03/2026
+ * Autor: Kevin Willian da Silva Souza
+ * Descricao: Ler o peso do boi eo percentual de engorda. Calcular e exibir o novo peso do boi.
+ */
+programa
+{
+	
+	funcao inicio()
+	{
+
+
+     //Defie as variaveis
+     real peso_atual, percetual, novo_peso
+
+
+     //Escreve "Digite o peso atual do boi (kg):"
+     escreva("Digite o peso atual do boi (kg):")
+
+     //Detecta o peso atual
+     leia(peso_atual)
+
+     limpa()
+
+
+
+
+     //Escreve "Digite o percetual de egorda (%): "
+     escreva("Digite o percetual de egorda (%): ")
+
+     //Detecta o percetual de egorda
+     leia(percetual)
+
+     limpa()
+
+     
+     //Calcula o percetual de egorda
+     novo_peso = peso_atual + (peso_atual * percetual / 100)
+
+
+     //Exibe o resultado
+     escreva("O novo peso do boi é: ", novo_peso, " kg")
+
+
+
+	
+	}
+}
