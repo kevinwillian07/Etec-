@@ -1,0 +1,368 @@
+SITE PRINCIPAL 
+ALUNOS: Larissa Mascoti, Kevin Wllian, Manuella Salvador
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vitrine de Marcas</title>
+</head>
+<body bgcolor="#f4f4f4">
+
+    <div align="center">
+        <br><br>
+        <h1>Principais Marcas</h1>
+        <hr width="60%">
+        <br>
+
+        <table border="0" cellpadding="20">
+            <tr>
+                <td align="center">
+                    <h3>Manuzets</h3>
+                    <p>Skincare e cuidados</p>
+                    <form action="manuzets.html">
+                        <button type="submit" style="cursor:pointer; padding: 10px 20px;">ACESSAR SITE</button>
+                    </form>
+                </td>
+
+                <td align="center">
+                    <h3>Mascoticars</h3>
+                    <p>Carros de qualidade</p>
+                    <form action="vrumvrum html.html">
+                        <button type="submit" style="cursor:pointer; padding: 10px 20px;">VER VEÍCULOS</button>
+                    </form>
+                </td>
+
+                <td align="center">
+                    <h3>Nivek</h3>
+                    <p>Tecnologias vibrantes</p>
+                    <form action="nivek.html">
+                        <button type="submit" style="cursor:pointer; padding: 10px 20px;">CONHECER</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <hr width="60%">
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+SITE 1
+ALUNOS: Manuella Salvador
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Manuzets | Neutral Skincare</title>
+</head>
+<body bgcolor="#F5F5F0" text="#4F4F4F" id="meuCorpo">
+
+    <center>
+        <h1>  MANUZETS SKINCARE </h1>
+        <p><b>ESSENCIAL E MINIMALISTA: USE O CUPOM NEUTRO15</b></p>
+        
+        <fieldset style="width: 450px; border: 2px solid #D2B48C; border-radius: 10px;">
+            <legend>Paleta de Cores</legend>
+            <button onclick="document.getElementById('meuCorpo').bgColor='#F5F5F0'; document.getElementById('meuCorpo').style.color='#4F4F4F'">Areia (Padrão)</button>
+            <button onclick="document.getElementById('meuCorpo').bgColor='#EAEAEA'; document.getElementById('meuCorpo').style.color='#333333'">Cinza Soft</button>
+            <button onclick="document.getElementById('meuCorpo').bgColor='#FFFFFF'; document.getElementById('meuCorpo').style.color='#4F4F4F'">Branco Puro</button>
+        </fieldset>
+
+        <br>
+
+        <table border="1" cellpadding="10" bgcolor="#FFFFFF" style="border-collapse: collapse; border-color: #D2B48C;">
+            <tr>
+                <td><a href="#" style="color: #8B7355;">Limpeza</a></td>
+                <td><a href="#" style="color: #8B7355;">Hidratação</a></td>
+                <td><a href="#" style="color: #8B7355;">Proteção Solar</a></td>
+                <td><a href="#" style="color: #8B7355;">Minha Conta</a></td>
+            </tr>
+        </table>
+    </center>
+
+    <hr size="3" color="#D2B48C">
+
+    <center>
+        <h2>  DESTAQUE: ESSENCE OIL HYDRATION  </h2>
+        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" width="450" border="4" style="border-color: #D2B48C; border-radius: 8px;">
+        <p><i>A pureza dos ingredientes naturais para sua rotina diária.</i></p>
+        <button style="background-color: #8B7355; color: white; padding: 12px 25px; border: none; border-radius: 4px; cursor: pointer;"><b>ADICIONAR AO CARRINHO - R$ 68,00</b></button>
+    </center>
+
+    <br>
+    <hr color="#D2B48C">
+
+    <h2>Catálogo de Essenciais</h2>
+    
+    <table border="1" width="100%" bgcolor="#FFFFFF" cellpadding="15" style="border-color: #D2B48C;">
+        <tr>
+            <td align="center" width="50%">
+                <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=300&q=80" width="250" style="border-radius: 5px; border: 1px solid #D2B48C;">
+                <h3>Sérum de Equilíbrio</h3>
+                <p>Para uma pele calma e iluminada naturalmente.</p>
+                <p><b>R$ 92,00</b></p>
+                <button>Ver Produto</button>
+            </td>
+            <td align="center" width="50%">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=300&q=80" width="250" style="border-radius: 5px; border: 1px solid #D2B48C;">
+                <h3>Creme de Limpeza Suave</h3>
+                <p>Remove impurezas mantendo a barreira natural.</p>
+                <p><b>R$ 42,90</b></p>
+                <button>Ver Produto</button>
+            </td>
+        </tr>
+    </table>
+
+    <center>
+        <hr color="#D2B48C">
+        <p>Manuzets Skincare Neutra - 2026 - Visitante: <b>000523</b></p>
+        <p><small>Beleza em cada detalhe simples</small></p>
+    </center>
+
+</body>
+</html>
+
+
+
+
+SITE 2
+ALUNOS: Kevin Willian
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>NIVEK | Meu Site de Tech</title>
+    <style>
+        /* Fiz um estilo simples para não ficar bagunçado */
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #f0f2f5; /* Um cinza azuladinho de fundo */
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* O topo do site */
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #000; /* Borda preta simples */
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Botões de trocar cor (aprendi a fazer isso!) */
+        .painel-cores {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 1px solid #999;
+            font-weight: bold;
+        }
+
+        /* Onde ficam os produtos */
+        .conteudo {
+            background-color: white;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .foto-principal {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #eee;
+        }
+
+        /* Tabela para os produtos ficarem lado a lado */
+        .tabela-produtos {
+            width: 100%;
+            margin-top: 30px;
+            border-spacing: 15px;
+        }
+
+        .produto-item {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .foto-pequena {
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body id="corpoPagina">
+
+    <header>
+        <p class="logo">nivek</p>
+        <p><i>"O futuro na palma da sua mão"</i></p>
+        
+        <div class="painel-cores">
+            <span>Trocar tema:</span>
+            <button onclick="document.getElementById('corpoPagina').style.backgroundColor='#e3f2fd'">Azul Claro</button>
+            <button onclick="document.getElementById('corpoPagina').style.backgroundColor='#f0f2f5'">Padrão</button>
+        </div>
+    </header>
+
+    <div class="conteudo">
+        <center>
+            <h2> DESTAQUE: GALAXY Z</h2>
+            <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500" class="foto-principal">
+            <p>O celular que dobra! Muito tecnológico.</p>
+            <button style="background-color: #000; color: white; padding: 15px 30px;">QUERO UM DESSE</button>
+        </center>
+
+        <table class="tabela-produtos">
+            <tr>
+                <td class="produto-item">
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=200" class="foto-pequena">
+                    <h3>Nivek S26</h3>
+                    <p>Uma câmera incrível para fotos.</p>
+                </td>
+                <td class="produto-item">
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=200" class="foto-pequena">
+                    <h3>Smart TV</h3>
+                    <p>Para ver filmes com muita cor.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Feito por um fã da Nivek em 2026</p>
+        <p>Contador de visitas: <b>000854</b></p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+SITE 3
+ALUNOS: Larissa Mascoti
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascoticar | Luxury Automotive</title>
+    <style>
+        /* Estilização básica para um visual moderno */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #D3D3D3;
+            text-align: center;
+            transition: background-color 0.3s; /* Transição suave de cor */
+        }
+        header, section, footer {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .grid-carros {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            flex: 1;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body id="meuCorpo">
+
+    <header>
+        <h1>MASCOTICAR AUTOMÓVEIS</h1>
+        <p><i>Engenharia de Pista para as Ruas</i></p>
+        <nav>
+            <a href="#">Modelos</a> | <a href="#">Seminovos</a> | <a href="#">Experiência</a>
+        </nav>
+    </header>
+
+    <section>
+        <h3>Painel de Estilo</h3>
+        <button onclick="document.body.style.backgroundColor='#ff6600'">Modo Performance</button>
+        <button onclick="document.body.style.backgroundColor='#D3D3D3'">Modo Padrão</button>
+    </section>
+
+    <section>
+        <h2>DESTAQUE: 750S</h2>
+        <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80" alt="Mascoticar 750S">
+    </section>
+
+    <section>
+        <h2>Nossa Coleção</h2>
+        <div class="grid-carros">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=300&q=80" alt="Artura">
+                <h3>Artura</h3>
+                <p>Híbrido de alta performance.</p>
+            </div>
+            
+    </section>
+
+    <footer>
+        <p>Site criado em 2026 - Visitante número: <b>000142</b></p>
+    </footer>
+
+</body>
+</html>
