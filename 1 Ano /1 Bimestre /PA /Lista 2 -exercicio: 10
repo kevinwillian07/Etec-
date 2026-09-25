@@ -1,0 +1,46 @@
+/*
+ * Instituição: etecvav
+ * Data: 09/04/2026
+ * Autor: Kevin Willian da Silva Souza
+ * Descricao:Leia a classificação indicativa de um filme e identifique sua categoria , de acordo com as seguintes faixas:
+*Até 10 anos → Infantil
+*De 11 a 14 anos → Infantojuvenil
+*De 15 a 17 anos → Juvenil
+*Acima de 17 anos → Adulto
+*/
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+//variaveis
+     inteiro classificacao
+
+//escreve "idade recomendada"
+     escreva("Idade recomendada:")
+
+//lê a variavel
+     leia(classificacao)
+
+//Verifica em qual faixa ela se encontra e exibi possivel resultado
+     se (classificacao <= 10) {
+     	escreva("É um filme infantil")
+     }
+     senao se (classificacao <= 14) {
+          escreva("É um filme infantojuvenil")
+     }
+     senao se (classificacao <= 17) {    	
+     	escreva("É um filme juvenil")  
+     }
+
+     senao {     	
+     	escreva("É um filme para adultos")
+     }
+
+
+
+		
+	}
+}
