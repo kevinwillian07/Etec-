@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: radial-gradient(#e0e7ff 2px, transparent 2px);
+    background-size: 30px 30px;
+    color: #5a67d8;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    padding: 30px 20px;
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 0px rgba(107, 70, 193, 0.2);
+}
+
+#subtitulo {
+    color: white;
+    margin-top: 10px;
+}
+.menu {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #6b46c1;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #bda1f3;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #bda1f3;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.evangelion-foto {
+    border-radius: 25px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.evangelion-foto img {
+    width: 350px;
+    display: block;
+    border-radius: 25px;
+}
+
+.evangelion-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 25px;
+}
+
+section {
+    flex: 1;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #7e7ed3;
+    text-align: left;
+}
+
+.pilar-box {
+
+
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    padding: 50px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #5d0e9d;
+    
+}
+
+.branco {
+    color: #ffffff;
+    text-align: left;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 100%;
+    padding: 20px;           
+    box-sizing: border-box;
+  }
+  
+  .video-container video,
+  .video-container iframe {
+    width: 100%;
+    max-width: 900px;        
+    aspect-ratio: 16 / 9;    
+    height: auto;            
+    border-radius: 8px;      
+    object-fit: cover;       
+  }
+
+  .roxo {
+
+    text-align: left;
+  }
+
+  .evangelion-ass {
+
+    border: 2px solid #bda1f3;
+    border-radius: 10px;
+    padding: 17px 250px;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .preto {
+    color:#000;
+    text-align: left;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #000;
+}
+
+h3 {
+    color: #7e7ed3;
+}
+
+.info p {
+    color: #000;
+}
