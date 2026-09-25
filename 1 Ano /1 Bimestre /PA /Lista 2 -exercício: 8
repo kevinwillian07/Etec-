@@ -1,0 +1,47 @@
+/*
+ * Instituição: etecvav
+ * Data: 09/04/2026
+ * Autor: Kevin Willian da Silva Souza
+ * Descricao: Ler três números inteiros e exibir o maior entre eles.
+*/
+
+
+programa
+{
+	
+	 
+     funcao inicio()
+	  {
+
+
+//Variaveis
+     inteiro n1,n2,n3,maior
+
+ //Escreva quais os numeros
+     escreva("Quais os números?")
+
+//Ler os números inseridos
+     leia(n1,n2,n3)
+
+//identificar o maior
+     maior = n1
+
+
+//condiçao
+     se (n2 > maior) {
+     maior = n2
+       }
+
+     se (n3 > maior) {
+     maior = n3
+     }
+
+
+//limpar console
+limpa()
+
+     escreva("O maior valor: ", maior)
+        
+    }
+}
+
