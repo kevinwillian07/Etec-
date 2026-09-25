@@ -1,0 +1,186 @@
+body{
+    background: url("fundo.png") repeat;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px;
+    animation: moverFundo 30s linear infinite;
+}
+ h1 {
+   text-align: center;
+   background-color: rgb(250, 249, 192);
+   padding: 10px;
+   border-radius: 10px;
+ }
+ 
+ h2 {
+   text-align: center;
+ }
+ 
+ h3 {
+   text-align: center;
+   background-color: rgb(250, 249, 192);
+   padding: 2px 4px;
+ }
+ 
+ .vamo {
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   border: 2px solid #ccc;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.85);
+ }
+ 
+
+ .potencia {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 30px;
+   width: 90%;
+   margin: 0 auto;
+ }
+ 
+ .texto1 {
+   width: 50%;
+  
+   text-align: center; 
+   border: 2px solid #ccc;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.85);
+ }
+ 
+ 
+ .galeria-container {
+   width: 40%;
+   max-width: 450px;
+   
+ }
+ 
+ 
+ .menucima {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-bottom: 15px;
+ }
+ 
+ .btn-link {
+   background-color: rgb(192, 151, 89);
+   color: white;
+   padding: 8px 16px;
+   text-decoration: none;
+   border-radius: 20px;
+   font-weight: bold;
+ }
+ 
+ .btn-link:hover {
+   background-color:rgb(146, 112, 62);
+ }
+ 
+
+ .galeria {
+   display: flex;
+   overflow-x: auto;
+   scroll-behavior: smooth; 
+   scroll-snap-type: x mandatory; 
+   scrollbar-width: none; 
+   border-radius: 12px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+ }
+ 
+ .galeria::-webkit-scrollbar {
+   display: none;
+ }
+ 
+ /* CARDS */
+ .card-animal {
+   flex: 0 0 100%; 
+   scroll-snap-align: start;
+   background-color: #b39451;
+   text-align: center;
+   padding-bottom: 15px;
+ }
+ 
+ .card-animal img {
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+ }
+ 
+ .card-animal h3 {
+   margin: 15px 0 0 0;
+   color: #333;
+   background-color: transparent; 
+ }
+
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:rgb(192, 151, 89);
+    border-radius:12px;
+    margin-bottom:30px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:#eeeb44;
+}
+
+.card-animal img{
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card-animal img:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    margin-top:50px;
+   
+    color:rgb(0, 0, 0);
+    text-align:center;
+    padding:30px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%; 
+}
+
+
+@keyframes moverFundo{
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: 500px 500px;
+    }
+}
