@@ -1,3 +1,3 @@
-# Etec-
+# Etec
 
-Repositório feito para mostrar meus projetos feitos ao decorrer dos anos sendo um aluno da DS
+Repositório feito para mostrar projetos feitos ou por mim ou por grupos aos quais eu participei e ajudei da execução do projeto
