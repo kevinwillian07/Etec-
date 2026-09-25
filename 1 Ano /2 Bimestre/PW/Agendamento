@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital del Fuego - Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>HOSPITAL DEL FUEGO</h1></header>
+
+    <div class="container">
+        <nav>
+            <strong>Principal</strong><br>
+            <a href="index.html">Médicos</a><br>
+            <a href="unidades.html">Unidades</a><br>
+            <a href="agendamento.html">Agendamento</a>
+        </nav>
+
+        <section>
+            <h2>Agendar Consulta</h2>
+            <form name="formulario" action="cadastrar.html" method="post">
+                <fieldset>
+                    <legend>Cadastro de Agendamento</legend>
+                    <div class="form-group">
+                        <div>
+                            <label for="txtNome">Nome</label>
+                            <input type="text" name="txtNome" id="txtNome" required />
+                        </div>
+                        <div>
+                            <label for="txtEmail">Email</label>
+                            <input type="email" name="txtEmail" id="txtEmail" required />
+                        </div>
+                        <div>
+                            <label for="txtMédico">Médico</label>
+                            <input type="text" name="txtMédico" id="txtMédico" required />
+                        </div>
+                        <input type="submit" name="botao" value="Cadastrar" />
+                    </div>
+                </fieldset>
+            </form>
+
+            <br>
+            <h2>Horários Disponíveis</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Médico</th>
+                        <th>Especialidade</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kevin Willian</td>
+                        <td>Urologista</td>
+                        <td>08:00 - 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriely Alves</td>
+                        <td>Nutricionista</td>
+                        <td>13:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Isabely Caconte</td>
+                        <td>Pediatra</td>
+                        <td>10:00 - 15:00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <img src="https://i.pinimg.com/736x/b9/65/c5/b965c5c9976b380a4ac14f40c00ed7ea.jpg" width="300" />
+        </section>
+    </div>
+    <footer>Copyright © HERMANOS DEL FUEGO</footer>
+</body>
+</html>
