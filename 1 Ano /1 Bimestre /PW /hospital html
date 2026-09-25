@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital del Fuego - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>HOSPITAL DEL FUEGO</h1></header>
+
+    <div class="container">
+        <nav>
+            <strong>Principal</strong><br>
+            <a href="index.html">Médicos</a><br>
+            <a href="unidades.html">Unidades</a><br>
+            <a href="agendamento.html">Agendamento</a>
+        </nav>
+
+        <section>
+            <h2>Médicos disponíveis:</h2>
+            <p><strong>Médico:</strong> Isabely Caconte</p>
+            <p><strong>Médico:</strong> Kevin Willian</p>
+            <p><strong>Médico:</strong> Gabriely Alves</p>
+
+            <h2>Diagnósticos:</h2>
+            <table>
+                <thead>
+                    <tr><th>Médico</th><th>Especialidade</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Kevin Willian</td><td>Urologista</td></tr>
+                    <tr><td>Gabriely Alves</td><td>Nutricionista</td></tr>
+                    <tr><td>Isabely Caconte</td><td>Pediatra</td></tr>
+                </tbody>
+            </table>
+            <img src="https://i.pinimg.com/736x/b9/65/c5/b965c5c9976b380a4ac14f40c00ed7ea.jpg" width="300" />
+        </section>
+    </div>
+    <footer>Copyright © HERMANOS DEL FUEGO</footer>
+</body>
+</html>
