@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DMAZ — Artistas</title>
+
+    <link rel="stylesheet" href="geral.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="five-removebg-preview.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="header">
+
+        <a href="inicio.html" class="logo">DMAZ<span>®</span></a>
+
+        <p class="subtitle">PORTAL DO ROCK</p>
+
+        <nav class="menu">
+            <a href="inicio.html">HOME</a>
+            <a href="Brasil.html">BRASIL</a>
+            <a href="groups.html">GRUPOS</a>
+            <a href="artists.html">ARTISTAS</a>
+            <a href="instrumentos.html">FESTIVAIS</a>
+        </nav>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            SISTEMA ONLINE
+        </div>
+
+    </header>
+
+    <main class="artists-page">
+
+        <section class="artists-intro">
+
+            <p class="artists-label">DMAZ ARCHIVE / ARTIST DATABASE</p>
+
+            <h1>
+                POR TRÁS<br>
+                DA <span>VOZ.</span>
+            </h1>
+
+            <p class="artists-description">
+                Por trás de cada música existe uma história.
+                Conheça alguns dos artistas que transformaram o rock
+                com suas vozes, personalidade, criatividade e influência
+                na indústria musical.
+            </p>
+
+        </section>
+        <section class="featured" id="featured">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">TOP MUSICAS</p>
+                    <h2>TOCANDO AGORA<span>:</span></h2>
+                </div>
+
+                <span class="section-number">[ 001 ]</span>
+            </div>
+
+            <div class="player">
+                <div class="album-cover">
+                    <img
+                        src="https://i.scdn.co/image/ab67616d00001e02bfff163b0602156a983fa079"
+                        alt="Capa do álbum BUT HERE WE ARE - Foo Fighters"
+                    >
+                </div>
+
+                <div class="player-info">
+                    <p class="player-label">DMAZ EXCLUSIVE PLAYER</p>
+                    <h3 id="track-title">SHOW ME HOW</h3>
+                    <p id="track-artist">FOO FIGHTERS</p>
+
+                    <div class="progress-area">
+                        <span id="current-time">00:00</span>
+
+                        <input
+                            type="range"
+                            id="progress"
+                            value="0"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                        >
+
+                        <span id="duration">00:00</span>
+                    </div>
+
+                    <div class="player-controls">
+                        <button id="play-button" type="button">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <audio id="audio" src="Foo Fighters - Show Me How - foofightersVEVO.mp3" preload="metadata"></audio>
+        </section>
+
+        <section class="artists-grid">
+
+            <article class="artist-card">
+
+                <div class="artist-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNeYfcuyfeCZByynHE1Pp1qIsaI-J1yKwN8QP-L4Ztmw&s=10" alt="Freddie Mercury">
+                </div>
+
+                <span class="artist-number">[ 001 ]</span>
+
+                <h2>FREDDIE MERCURY</h2>
+
+                <p class="artist-info">VOCALIST / QUEEN</p>
+
+                <p class="artist-text">
+                    Freddie Mercury foi um dos vocalistas mais marcantes
+                    da história do rock. Nascido em Zanzibar, ganhou
+                    reconhecimento mundial como integrante do Queen.
+                    Sua extensão vocal, presença de palco e personalidade
+                    artística ajudaram a transformar a banda em um fenômeno
+                    internacional. Entre suas performances mais lembradas
+                    está a apresentação no Live Aid, em 1985.
+                </p>
+
+            </article>
+
+            <article class="artist-card">
+
+                <div class="artist-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjz2eMWZA5MiztjzjJGyTMeMKSPEfnBsEphTEueAtsiQomvEB5j0tUuhc&s=10" alt="David Bowie">
+                </div>
+
+                <span class="artist-number">[ 002 ]</span>
+
+                <h2>DAVID BOWIE</h2>
+
+                <p class="artist-info">SINGER / SONGWRITER</p>
+
+                <p class="artist-text">
+                    David Bowie foi um artista britânico conhecido por sua
+                    capacidade de reinventar sua identidade musical e visual.
+                    Com personagens marcantes, como Ziggy Stardust, explorou
+                    diferentes estilos e influenciou gerações de músicos.
+                    Canções como Heroes, Space Oddity e Life on Mars?
+                    fazem parte de seu legado.
+                </p>
+
+            </article>
+
+            <article class="artist-card">
+
+                <div class="artist-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDwxr1pL9Jsm2zGar_AkRAOFWwXMVSB1itEE6MWTo5aA&s=10" alt="Kurt Cobain">
+                </div>
+
+                <span class="artist-number">[ 003 ]</span>
+
+                <h2>KURT COBAIN</h2>
+
+                <p class="artist-info">VOCALIST / NIRVANA</p>
+
+                <p class="artist-text">
+                    Kurt Cobain foi vocalista e guitarrista do Nirvana,
+                    tornando-se um dos principais símbolos do rock
+                    alternativo dos anos 1990. Seu estilo musical ajudou
+                    a popularizar o grunge mundialmente. Com composições
+                    como Smells Like Teen Spirit e Lithium, deixou uma
+                    influência duradoura na música.
+                </p>
+
+            </article>
+
+            <article class="artist-card">
+
+                <div class="artist-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKcKrSr_pXZ02UZT5sgxnz8_vfyWNZeUQY0QMXJTv9A&s=10" alt="Ozzy Osbourne">
+                </div>
+
+                <span class="artist-number">[ 004 ]</span>
+
+                <h2>OZZY OSBOURNE</h2>
+
+                <p class="artist-info">VOCALIST / BLACK SABBATH</p>
+
+                <p class="artist-text">
+                    Ozzy Osbourne ficou conhecido mundialmente como
+                    vocalista original do Black Sabbath, grupo considerado
+                    fundamental para o desenvolvimento do heavy metal.
+                    Também construiu uma carreira solo de grande sucesso,
+                    com músicas como Crazy Train e Mr. Crowley. Sua
+                    personalidade e contribuição musical marcaram gerações.
+                </p>
+
+            </article>
+
+            <article class="artist-card">
+
+                <div class="artist-image">
+                    <img src="https://miro.medium.com/1*outORkSQ1VojHa_BycqWTA.jpeg" alt="Chris Cornell">
+                </div>
+
+                <span class="artist-number">[ 005 ]</span>
+
+                <h2>CHRIS CORNELL</h2>
+
+                <p class="artist-info">VOCALIST / SOUNDGARDEN</p>
+
+                <p class="artist-text">
+                    Chris Cornell foi um cantor e compositor conhecido
+                    principalmente por seu trabalho com Soundgarden e
+                    Audioslave. Sua voz poderosa e suas composições
+                    ajudaram a definir parte do rock alternativo e do
+                    movimento grunge. Black Hole Sun e Like a Stone
+                    estão entre suas músicas mais conhecidas.
+                </p>
+
+            </article>
+
+            <article class="artist-card">
+
+                <div class="artist-image">
+                    <img src="https://www.billboard.com/wp-content/uploads/media/02-chester-bennington-bw-portrait-2009-a-billboard-1548.jpg?w=1024" alt="Chester Bennington">
+                </div>
+
+                <span class="artist-number">[ 006 ]</span>
+
+                <h2>CHESTER BENNINGTON</h2>
+
+                <p class="artist-info">VOCALIST / LINKIN PARK</p>
+
+                <p class="artist-text">
+                    Chester Bennington foi o vocalista do Linkin Park e
+                    ficou conhecido por sua intensidade vocal e
+                    interpretação emocional. Sua participação foi
+                    fundamental para a identidade sonora da banda,
+                    que misturava rock alternativo, nu metal e elementos
+                    eletrônicos. Músicas como Numb e In the End marcaram
+                    a história dos anos 2000.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="artists-footer">
+
+        <span>DMAZ®</span>
+
+        <p>DIGITAL MUSIC ARCHIVE ZONE — 2026</p>
+
+        <p>END OF DATABASE.</p>
+
+    </footer>
+
+    <script src="animacoes.js"></script>
+
+</body>
+
+</html>
