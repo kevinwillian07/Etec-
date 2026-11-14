@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMAZ — Home</title>
+
+    <link rel="stylesheet" href="geral.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="five-removebg-preview.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="header">
+        <a href="#home" class="logo">DMAZ<span>®</span></a>
+        <p class="subtitle">PORTAL DO ROCK</p>
+
+        <nav class="menu">
+            <a href="inicio.html">HOME</a>
+            <a href="Brasil.html">BRASIL</a>
+            <a href="groups.html">GRUPOS</a>
+            <a href="artists.html">ARTISTAS</a>
+            <a href="instrumentos.html">FESTIVAIS</a>
+        </nav>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            SISTEMA ONLINE
+        </div>
+    </header>
+<br>
+<br>
+<br>
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">POINT MUSICAL DIGITAL</p>
+
+                <h1>
+                    PORTAL<br>
+                    DO<br>
+                    <span>ROCK.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore o rock, instrumentos e artistas do mundo todo, tudo em um so lugar.
+                </p>
+            </div>
+
+            <div class="visual astronaut-visual">
+                <img
+                    src="https://i.pinimg.com/736x/6d/ad/a2/6dada24422ed957069e4ddbbe3a090c4.jpg"
+                    alt="Astronauta futurista do DMAZ"
+                    class="astronaut"
+                >
+
+                <span class="visual-label">SOUND / 001</span>
+            </div>
+        </section>
+
+        <section class="featured" id="featured">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">TOP MUSICAS</p>
+                    <h2>TOCANDO AGORA<span>:</span></h2>
+                </div>
+
+                <span class="section-number">[ 001 ]</span>
+            </div>
+
+            <div class="player">
+                <div class="album-cover">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/pt/b/b4/Muse_-_Absolution_Cover_UK.jpg"
+                        alt="Capa do álbum Absolution - Muse"
+                    >
+                </div>
+
+                <div class="player-info">
+                    <p class="player-label">DMAZ EXCLUSIVE PLAYER</p>
+                    <h3 id="track-title">HYSTERIA</h3>
+                    <p id="track-artist">MUSE</p>
+
+                    <div class="progress-area">
+                        <span id="current-time">00:00</span>
+
+                        <input
+                            type="range"
+                            id="progress"
+                            value="0"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                        >
+
+                        <span id="duration">00:00</span>
+                    </div>
+
+                    <div class="player-controls">
+                        <button id="play-button" type="button">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <audio id="audio" src="./Hysteria.mp3" preload="metadata"></audio>
+        </section>
+        
+        
+
+        <section class="releases" id="releases">
+            <div class="section-heading">
+                <div>
+                    <h2>LANÇAMENTOS<span> FAVORITOS.</span></h2>
+                </div>
+
+                <span class="section-number">[ 002 ]</span>
+            </div>
+
+            <div class="release-grid">
+
+                <article class="release-card">
+                    <div class="release-image">
+                        <img
+                            src="https://m.media-amazon.com/images/I/719XpU6TMmL._UF1000,1000_QL80_.jpg"
+                            alt="Capa do álbum do System of a Down"
+                        >
+                        <span>01</span>
+                    </div>
+
+                    <p class="release-category">ALBUM / 1998</p>
+                    <h3>System of a Down</h3>
+                    <p class="release-artist">System of a Down</p>
+                </article>
+
+                <article class="release-card">
+                    <div class="release-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOcLbMFmwYhbkYkxxxXZs1VWHsJrbzZA26P7DsKJvhDbEnjExABJkwbA&s=10"
+                            alt="Capa do álbum Will of the People"
+                        >
+                        <span>02</span>
+                    </div>
+
+                    <p class="release-category">ALBUM / 2022</p>
+                    <h3>Will of the People</h3>
+                    <p class="release-artist">MUSE</p>
+                </article>
+
+                <article class="release-card">
+                    <div class="release-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRa-ZCr_kSI8_HXNkLXJHpWr560ZqUFHzrVeVDqCoNcg&s=10"
+                            alt="Capa de álbum do Evanescence"
+                        >
+                        <span>03</span>
+                    </div>
+
+                    <p class="release-category">ALBUM / 1995</p>
+                    <h3>Evanescence</h3>
+                    <p class="release-artist">Evanescence</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="artists" id="artists">
+            <p class="eyebrow">AS PESSOAS POR TRÁS DA MÚSICA</p>
+
+            <h2>
+                DESCUBRA<br>
+                OS <span>ARTISTAS.</span>
+            </h2>
+
+            <a href="artists.html" class="main-button">
+                EXPLORAR ARTISTAS
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">DMAZ<span>®</span></a>
+        <p>ZONA DIGITAL — 2026</p>
+        <span>FIM DA TRANSMISSÃO.</span>
+    </footer>
+
+    <script src="animacoes.js"></script>
+
+</body>
+</html>
