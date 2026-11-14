@@ -1,0 +1,1581 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black: #050505;
+    --green: #A6FF00;
+    --silver: #C0C0C0;
+    --white: #F1F1F1;
+    --gray: #777;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* CABEÇALHO */
+
+.header {
+    width: 100%;
+    height: 85px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    border-bottom: 1px solid #ffffff18;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.logo span {
+    color: var(--green);
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+.menu a {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: var(--green);
+}
+
+.status {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+}
+
+.status-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: var(--green);
+    border-radius: 50%;
+    margin-right: 7px;
+    box-shadow: 0 0 10px var(--green);
+}
+
+
+/* HOME */
+
+.hero {
+    min-height: 100vh;
+    padding: 150px 10% 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background:
+        radial-gradient(ellipse at 75% 50%, #243b0929, transparent 40%),
+        var(--black);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--green);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: 0.95;
+    font-weight: 800;
+    letter-spacing: -5px;
+}
+
+.hero h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--green);
+}
+
+.hero-description {
+    color: #999;
+    font-size: 15px;
+    max-width: 360px;
+    line-height: 1.7;
+    margin-top: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    background: var(--green);
+    color: var(--black);
+    padding: 17px 25px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 35px;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: white;
+    box-shadow: 0 0 30px #a6ff0055;
+    transform: translateY(-4px);
+}
+
+
+/* GATO */
+
+.visual {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GATO */
+
+.astronaut-visual {
+    width: 550px;
+    height: 550px;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.astronaut {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 0 25px #a6ff0030)
+        drop-shadow(0 0 60px #a6ff0020);
+
+    animation: astronaut-float 5s ease-in-out infinite;
+}
+
+@keyframes astronaut-float {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+}
+
+.visual-label {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--green);
+}
+
+@keyframes sphere-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/* RODAPÉ DA HOME */
+
+.hero-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* TÍTULOS DAS SEÇÕES */
+
+.featured,
+.releases {
+    padding: 120px 10%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(30px, 5vw, 55px);
+}
+
+.section-heading h2 span {
+    color: var(--green);
+}
+
+.section-number {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--gray);
+    font-size: 12px;
+}
+
+
+/* PLAYER */
+
+.player {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 35px;
+    border: 1px solid #ffffff25;
+    background: linear-gradient(120deg, #151515, #080808);
+}
+
+.album-cover {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background:
+        radial-gradient(circle at 50% 50%, #a6ff0080, transparent 40%),
+        linear-gradient(135deg, #444, #111 55%, #777);
+}
+
+.album-cover span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    z-index: 2;
+    text-shadow: 0 0 15px black;
+}
+
+.album-cover small {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 9px;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.cover-circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #a6ff0080;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #a6ff0040;
+}
+
+.player-label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+    margin-bottom: 15px;
+}
+
+.player-info h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+}
+
+#track-artist {
+    color: #888;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.progress-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+}
+
+#progress {
+    flex: 1;
+    accent-color: var(--green);
+    cursor: pointer;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+#play-button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: var(--green);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.file-button {
+    color: var(--green);
+    border: 1px solid var(--green);
+    padding: 13px 18px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.file-button:hover {
+    background: var(--green);
+    color: black;
+}
+
+#audio-file {
+    display: none;
+}
+
+
+/* LANÇAMENTOS */
+
+.release-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.release-card {
+    transition: 0.3s;
+}
+
+.release-card:hover {
+    transform: translateY(-10px);
+}
+
+.release-image {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.release-image span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    z-index: 2;
+}
+
+.image-one {
+    background: radial-gradient(circle, #a6ff00, #283b08 35%, #080808 75%);
+}
+
+.image-two {
+    background: radial-gradient(circle, #aaa, #333 40%, #080808 80%);
+}
+
+.image-three {
+    background: radial-gradient(circle, #777, #242424 45%, #050505 80%);
+}
+
+.disc {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid #ffffff90;
+
+    background:
+        repeating-radial-gradient(circle, #222 0px, #777 2px, #111 4px);
+
+    box-shadow: 0 0 30px #000;
+    transition: 0.5s;
+}
+
+.release-card:hover .disc {
+    transform: rotate(45deg) scale(1.1);
+}
+
+.release-category {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--green);
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.release-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.release-artist {
+    color: #777;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* ARTISTAS */
+
+.artists {
+    min-height: 550px;
+    padding: 120px 10%;
+    text-align: center;
+
+    background:
+        radial-gradient(ellipse at center, #263d0c40, transparent 65%);
+}
+
+.artists h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(40px, 7vw, 80px);
+    line-height: 1.1;
+}
+
+.artists h2 span {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--green);
+}
+
+.artists > p:not(.eyebrow) {
+    color: #888;
+    max-width: 450px;
+    margin: 25px auto 0;
+    line-height: 1.7;
+}
+
+
+/* FOOTER */
+
+.footer {
+    min-height: 100px;
+    padding: 30px 7%;
+    border-top: 1px solid #ffffff20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p,
+.footer > span {
+    font-family: 'Share Tech Mono', monospace;
+    color: #777;
+    font-size: 10px;
+}
+
+
+@media (max-width: 900px) {
+
+    .visual {
+        right: -100px;
+        opacity: 0.5;
+    }
+
+    .hero-content {
+        z-index: 3;
+    }
+
+    .player {
+        grid-template-columns: 1fr;
+    }
+
+    .album-cover {
+        max-width: 300px;
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .header {
+        height: auto;
+        padding: 25px 6%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+
+    .status {
+        font-size: 9px;
+    }
+
+    .hero {
+        padding: 180px 7% 100px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .visual {
+        right: -180px;
+        opacity: 0.25;
+    }
+
+    .hero-bottom {
+        left: 7%;
+        right: 7%;
+        font-size: 8px;
+    }
+
+    .featured,
+    .releases {
+        padding: 80px 7%;
+    }
+
+    .release-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .player {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}.release-image {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    background: #151515;
+    border: 1px solid #333;
+}
+
+.release-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.release-card:hover .release-image img {
+    transform: scale(1.08);
+}
+
+.release-image span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #A6FF00;
+    font-family: monospace;
+    z-index: 2;
+}
+.album-cover {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* ANIMAÇÃO DO MOUSE */
+
+.player {
+    transition: all 0.4s ease;
+}
+
+.player:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #A6FF00;
+    box-shadow: 0 0 25px rgba(166, 255, 0, 0.15);
+}
+.subtitle {
+    color: #A6FF00;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+        body {
+            background: #080808;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .groups-page {
+            padding: 100px 8%;
+        }
+
+        /* ABERTURA */
+
+        .groups-intro {
+            margin-bottom: 90px;
+        }
+
+        .groups-label {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 4px;
+            font-size: 13px;
+        }
+
+        .groups-intro h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(40px, 7vw, 85px);
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        .groups-intro h1 span {
+            color: #A6FF00;
+        }
+
+        .groups-description {
+            color: #999;
+            max-width: 600px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* LISTA DE BANDAS */
+
+        .groups-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 65px 40px;
+        }
+
+        .group-card {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            transition: 0.4s ease;
+        }
+
+        .group-card:hover {
+            transform: translateY(-7px);
+            border-color: #A6FF00;
+        }
+
+        /* ESPAÇO DAS FOTOS */
+
+        .group-image {
+            width: 100%;
+            height: 280px;
+            background: #171717;
+            border: 1px solid #292929;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .group-image span {
+            color: #666;
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 3px;
+            font-size: 13px;
+        }
+
+        .group-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* TEXTOS */
+
+        .group-number {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 13px;
+        }
+
+        .group-card h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 27px;
+            margin: 12px 0;
+        }
+
+        .group-info {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .group-text {
+            color: #999;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        /* RODAPÉ */
+
+        .groups-footer {
+            margin-top: 110px;
+            padding: 30px 8%;
+            border-top: 1px solid #292929;
+            display: flex;
+            justify-content: space-between;
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        .groups-footer span {
+            color: #A6FF00;
+        }
+
+
+        @media (max-width: 750px) {
+
+            .groups-page {
+                padding: 70px 6%;
+            }
+
+            .groups-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .group-image {
+                height: 230px;
+            }
+
+            .groups-footer {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+        }
+body {
+            background: #090909;
+            color: #fff;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        
+
+        .br-hero {
+            padding: 100px 8% 80px;
+            border-bottom: 1px solid #292929;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .br-tag {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 4px;
+            font-size: 13px;
+        }
+
+        .br-hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(50px, 10vw, 130px);
+            line-height: 0.95;
+            margin: 35px 0;
+            letter-spacing: -5px;
+        }
+
+        .br-hero h1 span {
+            color: #A6FF00;
+        }
+
+        .br-intro {
+            max-width: 500px;
+            color: #999;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .br-index {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        /* SEÇÃO DOS ARTISTAS */
+
+        .br-artists {
+            padding: 90px 8%;
+        }
+
+        .br-section-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 65px;
+            gap: 20px;
+        }
+
+        .br-section-title h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(25px, 4vw, 45px);
+        }
+
+        .br-section-title h2 span {
+            color: #A6FF00;
+        }
+
+        .br-section-title p {
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        /* CARDS */
+
+        .br-card {
+            display: grid;
+            grid-template-columns: 90px 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            padding: 35px 0;
+            border-top: 1px solid #303030;
+            transition: 0.4s ease;
+        }
+
+        .br-card:hover {
+            border-color: #A6FF00;
+            background: rgba(166, 255, 0, 0.025);
+        }
+
+        .br-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 38px;
+            color: #A6FF00;
+            opacity: 0.8;
+        }
+
+        /* FOTOS */
+
+        .br-image {
+            width: 100%;
+            height: 300px;
+            background: #171717;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .br-image span {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+
+        .br-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(100%);
+            transition: 0.5s ease;
+        }
+
+        .br-card:hover .br-image img {
+            filter: grayscale(0%);
+            transform: scale(1.04);
+        }
+
+        /* TEXTOS */
+
+        .br-content h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(23px, 3vw, 35px);
+            margin: 15px 0;
+        }
+
+        .br-category {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .br-content p:last-child {
+            color: #999;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .br-origin {
+            color: #666;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 11px;
+            margin-top: 20px;
+        }
+
+
+        .br-quote {
+            margin: 40px 8% 100px;
+            padding: 55px;
+            background: #A6FF00;
+            color: #080808;
+        }
+
+        .br-quote p {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(22px, 4vw, 42px);
+            line-height: 1.3;
+            font-weight: 700;
+        }
+
+        .br-quote span {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+
+
+        .br-footer {
+            border-top: 1px solid #292929;
+            padding: 30px 8%;
+            display: flex;
+            justify-content: space-between;
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        .br-footer span {
+            color: #A6FF00;
+        }
+
+
+        @media (max-width: 800px) {
+
+            .br-card {
+                grid-template-columns: 55px 1fr;
+                gap: 15px;
+            }
+
+            .br-number {
+                font-size: 25px;
+            }
+
+            .br-image {
+                grid-column: 2;
+                height: 250px;
+            }
+
+            .br-content {
+                grid-column: 2;
+            }
+
+            .br-hero {
+                padding-top: 70px;
+            }
+
+            .br-quote {
+                padding: 30px;
+            }
+
+            .br-footer {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .br-section-title {
+                align-items: start;
+                flex-direction: column;
+            }
+
+        }
+        body {
+            background: #090909;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+
+        .culture-hero {
+            padding: 100px 8%;
+            border-bottom: 1px solid #292929;
+        }
+
+        .culture-label {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 4px;
+            font-size: 13px;
+        }
+
+        .culture-hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(45px, 9vw, 110px);
+            line-height: 1;
+            margin: 30px 0;
+        }
+
+        .culture-hero h1 span {
+            color: #A6FF00;
+        }
+
+        .culture-intro {
+            color: #999;
+            max-width: 580px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .culture-index {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 55px;
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        /* TÍTULOS DAS SEÇÕES */
+
+        .culture-section {
+            padding: 90px 8%;
+        }
+
+        .culture-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 45px;
+        }
+
+        .culture-heading h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(30px, 5vw, 55px);
+        }
+
+        .culture-heading h2 span {
+            color: #A6FF00;
+        }
+
+        .culture-heading p {
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        /* INSTRUMENTOS */
+
+        .instrument-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .instrument-card {
+            background: #121212;
+            border: 1px solid #292929;
+            overflow: hidden;
+            transition: 0.4s ease;
+        }
+
+        .instrument-card:hover {
+            transform: translateY(-8px);
+            border-color: #A6FF00;
+        }
+
+        .instrument-image {
+            height: 230px;
+            background: #1c1c1c;
+            overflow: hidden;
+        }
+
+        .instrument-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(100%);
+            transition: 0.5s ease;
+        }
+
+        .instrument-card:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.06);
+        }
+
+        .instrument-content {
+            padding: 25px;
+        }
+
+        .instrument-number {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        .instrument-content h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 21px;
+            margin: 15px 0;
+        }
+
+        .instrument-content p {
+            color: #999;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        
+
+        .culture-divider {
+            margin: 0 8%;
+            border-top: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        /* FESTIVAIS */
+
+        .festival-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .festival-card {
+            display: grid;
+            grid-template-columns: 180px 1fr 220px;
+            gap: 30px;
+            align-items: center;
+            padding: 35px 0;
+            border-bottom: 1px solid #333;
+            transition: 0.4s ease;
+        }
+
+        .festival-card:hover {
+            background: rgba(166, 255, 0, 0.025);
+        }
+
+        .festival-image {
+            width: 100%;
+            height: 135px;
+            background: #1b1b1b;
+            overflow: hidden;
+        }
+
+        .festival-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: 0.5s ease;
+        }
+
+        .festival-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .festival-info h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .festival-category {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .festival-info p:last-child {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .festival-location {
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            text-align: right;
+            line-height: 1.8;
+        }
+
+        /* FRASE FINAL */
+
+        .culture-end {
+            margin: 50px 8% 100px;
+            padding: 65px 40px;
+            background: #A6FF00;
+            color: #080808;
+        }
+
+        .culture-end h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(25px, 5vw, 55px);
+            line-height: 1.2;
+        }
+
+        .culture-end p {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-top: 25px;
+        }
+
+
+        .culture-footer {
+            padding: 30px 8%;
+            border-top: 1px solid #292929;
+            display: flex;
+            justify-content: space-between;
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        .culture-footer span {
+            color: #A6FF00;
+        }
+
+
+        @media (max-width: 850px) {
+
+            .instrument-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .festival-card {
+                grid-template-columns: 130px 1fr;
+            }
+
+            .festival-location {
+                grid-column: 2;
+                text-align: left;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .culture-hero,
+            .culture-section {
+                padding: 65px 6%;
+            }
+
+            .instrument-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .culture-heading {
+                align-items: start;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .festival-card {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .festival-image {
+                height: 200px;
+            }
+
+            .festival-location {
+                grid-column: 1;
+            }
+
+            .culture-index {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .culture-end {
+                margin: 30px 6% 70px;
+                padding: 35px 25px;
+            }
+
+            .culture-footer {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+        }
+        /* MAUSE VERDE */
+
+* {
+    cursor: none !important;
+}
+
+.cursor {
+    width: 8px;
+    height: 8px;
+    background: #A6FF00;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-outline {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #A6FF00;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99998;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, border-color 0.2s;
+}
+
+.cursor-outline.hover {
+    width: 55px;
+    height: 55px;
+    background: rgba(166, 255, 0, 0.08);
+    box-shadow: 0 0 15px rgba(166, 255, 0, 0.3);
+}
+  body {
+            background: #080808;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+
+        .artists-page {
+            padding: 100px 8%;
+        }
+
+        .artists-intro {
+            margin-bottom: 90px;
+        }
+
+        .artists-label {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 4px;
+            font-size: 13px;
+        }
+
+        .artists-intro h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(40px, 7vw, 85px);
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        .artists-intro h1 span {
+            color: #A6FF00;
+        }
+
+        .artists-description {
+            color: #999;
+            max-width: 620px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* ARTISTAS */
+
+        .artists-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 65px 40px;
+        }
+
+        .artist-card {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            transition: 0.4s ease;
+        }
+
+        .artist-card:hover {
+            transform: translateY(-7px);
+            border-color: #A6FF00;
+        }
+
+        /* IMAGENS */
+
+        .artist-image {
+            width: 100%;
+            height: 320px;
+            background: #171717;
+            border: 1px solid #292929;
+            overflow: hidden;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .artist-image span {
+            color: #666;
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 3px;
+            font-size: 13px;
+        }
+
+        .artist-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: 0.5s ease;
+        }
+
+        .artist-card:hover .artist-image img {
+            transform: scale(1.05);
+        }
+
+        /* INFORMAÇÕES */
+
+        .artist-number {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 13px;
+        }
+
+        .artist-card h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 27px;
+            margin: 12px 0;
+        }
+
+        .artist-info {
+            color: #A6FF00;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .artist-text {
+            color: #999;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .artists-footer {
+            margin-top: 110px;
+            padding: 30px 8%;
+            border-top: 1px solid #292929;
+            display: flex;
+            justify-content: space-between;
+            color: #777;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+        }
+
+        .artists-footer span {
+            color: #A6FF00;
+        }
+
+
+        @media (max-width: 750px) {
+
+            .artists-page {
+                padding: 70px 6%;
+            }
+
+            .artists-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .artist-image {
+                height: 260px;
+            }
+
+            .artists-footer {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+        }
