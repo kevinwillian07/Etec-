@@ -1,6 +1,6 @@
 # Etec
 
-Este repositório reúne projetos e trabalhos desenvolvidos ao longo da minha trajetória acadêmica na **Etec**, durante os três anos do curso técnico de **Desenvolvimento de Sistemas (MTEC)**.
+<h2> Este repositório reúne projetos e trabalhos desenvolvidos ao longo da minha trajetória acadêmica na **Etec**, durante os três anos do curso técnico de **Desenvolvimento de Sistemas (MTEC)**.</h2>
 
 Aqui você encontrará projetos realizados individualmente e em equipe, incluindo trabalhos nos quais participei ativamente, contribuindo com o desenvolvimento, a implementação de funcionalidades e a execução das atividades.
 
