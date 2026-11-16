@@ -1,4 +1,4 @@
-# Etec
+# Etec Vasco Antônio Venchiarutti
 
 <h2> Este repositório reúne projetos e trabalhos desenvolvidos ao longo da minha trajetória acadêmica na **Etec**, durante os três anos do curso técnico de **Desenvolvimento de Sistemas (MTEC)**.</h2>
 
